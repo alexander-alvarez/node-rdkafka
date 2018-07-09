@@ -122,7 +122,11 @@
                   'xcode_settings': {
                     'MACOSX_DEPLOYMENT_TARGET': '10.11',
                     'GCC_ENABLE_CPP_RTTI': 'YES',
+                    'OTHER_LDFLAGS': [
+                      '-L/usr/local/opt/openssl/lib'
+                    ],
                     'OTHER_CPLUSPLUSFLAGS': [
+                      '-I/usr/local/opt/openssl/include',
                       '-std=c++11'
                     ],
                   },
